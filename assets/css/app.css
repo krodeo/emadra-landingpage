@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-7xl px-10 mx-auto;
+}
+
+.button{
+    @apply inline-flex items-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-gray-900 text-white;
+}
+
+/* npx tailwindcss -i ./assets/css/app.css -o ./assets/css/theme.css --watch */

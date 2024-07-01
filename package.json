@@ -1,0 +1,13 @@
+{
+  "name": "Emarda ShoolFin Landingpage",
+  "version": "1.0.0",
+  "description": "Landingpage Emarda SchoolFin",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./assets/css/app.css -o ./assets/css/theme.css --watch"
+  },
+  "author": "Krodeo",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

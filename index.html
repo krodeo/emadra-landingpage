@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emadra SchoolFin</title>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Theme -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/js/app.js"></script>
+</head>
+
+<body x-data="App">
+    <!-- Navbar -->
+    <div class="w-full fixed top-0 left-0 bg-white">
+        <div class="container flex items-center gap-x-2 py-4">
+            <h1 class="text-2xl font-extrabold mr-auto">LOGO</h1>
+            <a href="#" @click="klik" class="button">Request Demo</a>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="pt-36 pb-24">
+        <div class="container grid grid-cols-2">
+            <div>
+                <h1 class="text-7xl font-bold mb-8 text-sky-600">Hilangkan Pening Urusan Keuangan Sekolah</h1>
+                <p class="text-lg mb-9">Dengan system ini urusan keuangan sekolah anda akan jadi lebih mudah. Pembayaran bisa melalui dompet digital dan mercan swalayan yang tercatat otomatis, terdapat pula notifikasi tagihan pembayaran ke wali secara otomatis, dan banyak lagi fitur yang memudahkan pengguna.</p>
+                <a class="button font-semibold text-lg !px-9 !py-3" href="">MINTA DEMO</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="py-28 bg-cyan-500 text-white">
+        <div class="container grid grid-cols-2">
+            <div></div>
+            <div>
+                <h1 class="text-5xl font-bold mb-8 leading-tight">Masih Mengalami kerepotan/keruwetan ini?</h1>
+                <div class="text-lg">
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Terlalu banyak mencatat ecara manual pembayaran siswa</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Kesusahan dalam menagih pembayaran kepada siswa/wadiv akibat harus menghubungi satu persatu</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Bingung dimana menyimpan data pembayaran siswa di bulan ini atau bulan-bulan sebelumnya</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Kerepotan dan sering lembur untuk menyiapkan laporan keuangan kepada Kepala TU atau Kepala Sekolah</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Kerepotan karena harus melakukan pekerjaan keuangan engan laptop tertentu atau tempat tertentu</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Merasa takut jikalau data keuangan diketahui oleh orang yang tidak memidivki kewenagan</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-x-circle-fill pt-px"></i>Serta kerepotan atau keruwetan lainnya</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="py-28">
+        <div class="container grid grid-cols-2">
+            <div>
+                <h1 class="text-5xl font-bold mb-8 leading-tight">Masih ingin mengalami keruwetan...atau...</h1>
+                <div class="text-xl">
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin pekerjaan keuangan yang lebih sederhana</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin pulang lebih awal dan waktu luang dihabiskan untuk melakukan aktivitas bermanfaat lainnya</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin memiliki data yang lebih tertata rapi sehingga mudah untuk dicari dan dianalisa</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin bisa mengerjakan pekerjaan keuangan darimana saja dengan laptop atau tablet dan smartphone</div>
+                    <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin data keuangan lebih aman karena hanya bisa diakses oleh orang-orang yang memiliki berhak</div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="py-28">
+        <div class="container !max-w-3xl text-center">
+            <h1 class="text-5xl font-bold mb-8 leading-tight">Sudahi..kerepotan dan keruwetan pengelolaan keuangan sekolah!</h1>
+            <p class="text-xl">Gunakan sistem keuangan yang kami buat untuk membantu anda mempermudah pengelolaan keuangan ekolah dan mengelola pembayaran, dengan fitur-fitur yang bisa membuat Anda nyaman, tenang yang kami sediakan kepada anda dengan Harga yang sangat-sangat terjangkau!</p>
+        </div>
+    </div>
+    <!-- Page : Features -->
+    <div class="py-52 text-white bg-slate-800">
+        <div class="container">
+            <h1 class="text-4xl font-bold mb-8 leading-tight text-cyan-500">Fitur-fitur Emadra ShoolFin v.01</h1>
+            <p class="text-xl mb-20">Sistem ini memiliki fitur-fitur untuk membantu mempermudah nda dalam mengelola keuangan sekolah, mengelola pembayaran iuran sekolah dari berbagai cara seperti tunai, dompet digital, merchant, dan lain-lain. Sistem ini juga dapat membantu mencatat uang masuk non-pembayaran siswa, uang keluar, merencanakan pengeluaran,membandingkan Encana pengeluaran dan realisasi, menghasilkan laporan secara spontan begitu data input dimasukkan, serta berbagai fitur lainnya.</p>
+            <div class="grid grid-cols-3 gap-9">
+                <template x-for="i in 9">
+                    <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                        <i class="bi bi-apple text-6xl block mb-5"></i>
+                        <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Import/Export Data</h3>
+                        <p>Data .xlsx dapat diimport kedalam sistem, atau data dari sistem dapat diexport ke dalam format .xlsx</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <!-- Page : Video -->
+    <div class="py-36 text-white bg-cyan-500">
+        <div class="container flex items-center flex-col text-center">
+            <h1 class="text-5xl font-bold mb-14 leading-tight">Demo Fitur (Video)</h1>
+            <div class="aspect-video w-full max-w-4xl bg-black mb-14">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MFWwdNfaTxc" title="Asus nyerah… Unboxing Zenfone 11 Ultra." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="text-center text-2xl max-w-xs mb-10">Klik tombol dibawah untuk meminta demo aplikasi</div>
+            <a href="" class="button font-bold text-3xl !px-16 !py-5 !bg-yellow-300 border-b-4 border-yellow-500 !text-black hover:!bg-yellow-400">Request Demo</a>
+        </div>
+    </div>
+    <!-- Page : Price -->
+    <div class="py-48 text-white bg-cyan-600/85">
+        <div class="container grid grid-cols-3 gap-6">
+            <div class="pr-5">
+                <h1 class="text-5xl font-bold mb-10">Harga<br>Pre-Launch</h1>
+                <p class="text-xl mb-10">Sistem ini dalam proses pengembangan dan direncanakan akan dapat digunakan pada awal agustus 2024. Kami memberikan kesempatan kepada anda untuk mendapatkan system ini dengan Harga pre-launch yang lebih terjangkau lagi dari Harga setelah launching.</p>
+                <p class="text-xl mb-10">Pilih salah satu Harga yang diinginkan dari pilihan berikut.</p>
+                <div class="text-xl font-semibold bg-cyan-800/90 p-5 rounded-2xl">Harga dapat berubah sewaktu-waktu tanpa pemberitahuan Pesan sekarang!</div>
+            </div>
+            <!-- SUBS CARD -->
+            <div class="flex flex-col bg-white text-gray-700 py-9 px-8 rounded-lg">
+                <h2 class="text-3xl font-bold text-cyan-500 mb-8">Berlangganan<br>(Sistem Online)</h2>
+                <p class="text-lg">Bayar setiap tahun, sistem diinstal di server yang kami kelola.</p>
+                <div class="flex flex-col mb-5 text-gray-600">
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pembayaran multi-channel (tunai, dompet digital, merchant swalayan)</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Data dapat diexport atau diimport dalam format .xlsx</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pengingat tagihan ke email siswa/wali</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung aplikasi Android untuk pengelolaan keungan sekolah sehingga lebih memudahkan ekolah dan siswa/wali untuk melihat data pembayaran melalui aplikasi</div>
+                    <div class="flex gap-x-3 py-3"><i class="bi-check-lg text-2xl text-green-500"></i>Sudah termasuk domain & hosting</div>
+                </div>
+                <img src="assets/images/gplay_logo.png" class="w-2/3 mb-8" alt="">
+                <div class="flex items-end text-cyan-800 mt-auto">
+                    <h2 class="text-4xl text-[40px] font-bold mr-1">IDR 999.000</h2><span class="opacity-70"> / tahun*</span>
+                </div>
+                <h2 class="text-lg font-semibold text-gray-400 line-through  mb-6">IDR 2.499.000/tahun</h2>
+                <a href="#" class="button w-full !justify-center !bg-gray-600 hover:!bg-gray-500 !py-3.5 !rounded-lg font-bold mb-4 !text-2xl">BELI SEKARANG</a>
+                <div class="text-xs text-gray-400">&nbsp* Harga pre-launch</div>
+            </div>
+            <!-- BUY ONCE CARD -->
+            <div class="flex flex-col bg-green-100 text-gray-700 py-9 px-8 rounded-lg">
+                <h2 class="text-3xl font-bold text-cyan-500 mb-8">Bayar 1x lifetime (Sistem Offline)</h2>
+                <p class="text-lg">Bayar 1 kali seumur hidup. Sistem diinstal di lokasi/server milik sekolah.</p>
+                <div class="flex flex-col mb-5 text-gray-600">
+                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pembayaran multi-channel (tunai, dompet digital, merchant swalayan)</div> -->
+                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Data dapat diexport atau diimport dalam format .xlsx</div> -->
+                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pengingat tagihan ke email siswa/wali</div> -->
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung aplikasi Android untuk pengelolaan keungan sekolah sehingga lebih memudahkan ekolah dan siswa/wali untuk melihat data pembayaran melalui aplikasi</div>
+                    <div class="flex gap-x-3 py-3"><i class="bi-check-lg text-2xl text-green-500"></i>Sudah termasuk domain & hosting</div>
+                </div>
+                <h2 class="text-cyan-800 mt-auto text-4xl text-[40px] font-bold mr-1">IDR 1.999.000</h2>
+                <h2 class="text-lg font-semibold text-gray-400 line-through  mb-6">IDR 4.499.000</h2>
+                <a href="#" class="button w-full !justify-center !bg-green-600 hover:!bg-green-500 !py-3.5 !rounded-lg font-bold mb-4 !text-2xl">BELI SEKARANG</a>
+                <div class="text-xs text-gray-400">&nbsp* Harga pre-launch</div>
+            </div>
+        </div>
+    </div>
+    <!-- Page : Buy Now -->
+    <div class="py-48 text-white bg-gray-800">
+        <div class="container flex flex-col items-center text-center">
+            <h1 class="text-5xl font-bold mb-8 leading-tight">Beli Sekarang!</h1>
+            <p class="text-xl max-w-2xl mb-14">Harga dapat berubah sewaktu-waktu tanpa pemberitahuan. Beli sekarang! Tekan tombol dibawah ini dan anda akan diberikan instruksi pembayaran melalui WhatsApp chat.</p>
+            <!-- Timer Countdown -->
+            <div class="flex gap-x-6 mb-14" x-init="startCountdown('2024-07-30 23:59:59')">
+                <div class="flex flex-col items-center justify-center bg-orange-400 w-36 h-36 rounded-xl select-none">
+                    <h3 class="text-6xl font-bold text-white" x-text="timer.day"></h3><span>Hari</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-orange-400 w-36 h-36 rounded-xl select-none">
+                    <h3 class="text-6xl font-bold text-white" x-text="timer.hour"></h3><span>Jam</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-orange-400 w-36 h-36 rounded-xl select-none">
+                    <h3 class="text-6xl font-bold text-white" x-text="timer.minute"></h3><span>Menit</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-orange-400 w-36 h-36 rounded-xl select-none">
+                    <h3 class="text-6xl font-bold text-white" x-text="timer.second"></h3><span>Detik</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="flex gap-4">
+                <a href="#" class="button !bg-cyan-600 hover:!bg-cyan-700 !rounded-md !text-xl !py-5 font-semibold">Beli Berlangganan</a>
+                <a href="#" class="button !bg-cyan-200 hover:!bg-cyan-300 !text-black !rounded-md !text-xl !py-5 font-semibold">Beli 1x Lifetime</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page : FAQ -->
+    <div class="py-40">
+        <div class="container flex flex-col items-center">
+            <h1 class="text-5xl font-bold mb-16 leading-tight text-center max-w-xl">Pertanyaan yang sering diajukan</h1>
+            <div class="flex flex-col gap-5 max-w-4xl mb-20">
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Agar pembayaran sekolah dapat menggunakan dompet digital seperti ketika kita memesan layanan ojek online dsb, paket harga mana yang harus saya pilih?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Untuk dapat menggunakan fitur pembayaran melalui dompet digital, sekolah harus memilih paket berlangganan.</p>
+                </div>
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Berapa lama waktu yang diperlukan untuk sistem bisa digunakan?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Sistem paling lambat dapat mulai digunakan setelah 1x24 jam untuk paket berlangganan. Sedangkan untuk paket 1x lifetime akan tergantung dari kesediaan PC/Server, ketersediaan waktu install, dan beberapa kondisi lainnya.</p>
+                </div>
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Berapa lama garansi yang diberikan?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Untuk sistem berlangganan garansi disediakan selama anda masih berlangganan. Untuk paket 1x bayar garansi yang disediakan adalah 1 tahun sejak anda membeli paket tersebut.</p>
+                </div>
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Apakah ada panduan dan training penggunaan yang disediakan?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Ada. Kami menyediakan buku panduan, video penggunaan, dan pelatihan penggunaan secara online. Untuk pelatihan secara offline harus melalui kesepakatan terlebih dahulu dan dapat dikenakan biaya berdasarkan durasi, peserta, dan lokasi.</p>
+                </div>
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Apakah data bisa dibackup?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Untuk sistem berlangganan, anda hanya dapat mencadangkan datanya melalui fitur export .xlsx yang disediakan. Sedangkan untuk paket 1x lifetime, anda bisa mencadangkan datanya dalam bentuk .xlsx ataupun langsung dalam bentuk query database (membutuhkan keahlian khusus)</p>
+                </div>
+                <div class="p-10 bg-zinc-100 rounded-lg">
+                    <h4 class="text-xl font-bold mb-3 text-zinc-800 leading-tight">Apakah ada pembatasan perangkat yang dipakai?</h4>
+                    <p class="text-zinc-700 text-lg leading-tight">Untuk paket berlangganan, tidak ada pembatasan perangkat yang dipakai. Anda dapat menggunakan pada PC, tablet, laptop, smartphone, melalui browser yang ada pada perangkat tersebut. Sedangkan paket 1x lifetime, standarnya hanya dapat digunakan pada PC yang terinstall sistem tersebut namun dapat dibuat agar bisa diakses di perangkat lain dengan konfigurasi tambahan (dan mungkin alat tambahan juga diperlukan jaringan)</p>
+                </div>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-20">Ada pertanyaan belum terjawab?</h2>
+            <a href="" class="button font-bold text-3xl !px-16 !py-5 !bg-yellow-300 border-b-4 border-yellow-500 !text-black hover:!bg-yellow-400">Hubungi Sekarang</a>
+        </div>
+    </div>
+    <!-- Footer -->
+     <footer class="py-36 bg-gray-800">
+        <div class="container"></div>
+     </footer>
+</body>
+
+</html>
