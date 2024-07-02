@@ -17,7 +17,11 @@ h1, h2, h3, h4, h5, h6{
 
 .button{
     font-family: 'Poppins', sans-serif;
-    @apply inline-flex items-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-gray-900 text-white;
+    @apply inline-flex items-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-orange-500 text-white transition-colors;
+}
+
+.card-feature{
+    @apply p-8 bg-slate-700 rounded-3xl flex flex-col select-none hover:bg-slate-900/80 hover:scale-105 transition-all;
 }
 
 /* npx tailwindcss -i ./assets/css/app.css -o ./assets/css/theme.css --watch */
