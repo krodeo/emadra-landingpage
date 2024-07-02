@@ -22,7 +22,8 @@
     <!-- Navbar -->
     <div class="w-full bg-white transition-all z-50" :class="{'fixed top-0 left-0':isNavbarSticky, 'shadow-xl':isScrolled && isNavbarSticky}">
         <div class="container flex items-center gap-x-2 py-4">
-            <h1 class="text-3xl font-extrabold mr-auto uppercase">Logo</h1>
+            <!-- <h1 class="text-3xl font-extrabold mr-auto uppercase">Logo</h1> -->
+            <a href="" @click.prevent="backToTop" class="mr-auto"><img src="assets/images/logo.png" class="h-10" alt=""></a>
             <a href="#" @click="klik" class="button">Request Demo</a>
             <a href="#" class="button">Contact Us</a>
         </div>
