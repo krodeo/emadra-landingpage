@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emadra SchoolFin</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Rubik&display=swap" rel="stylesheet">
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Bootstrap-icon -->
@@ -16,27 +20,28 @@
 
 <body x-data="App">
     <!-- Navbar -->
-    <div class="w-full fixed top-0 left-0 bg-white">
+    <div class="w-full bg-white transition-all" :class="{'fixed top-0 left-0':isNavbarSticky, 'shadow-xl':isScrolled && isNavbarSticky}">
         <div class="container flex items-center gap-x-2 py-4">
             <h1 class="text-2xl font-extrabold mr-auto">LOGO</h1>
             <a href="#" @click="klik" class="button">Request Demo</a>
             <a href="#" class="button">Contact Us</a>
         </div>
     </div>
-    <!-- Page -->
+    <!-- Page : HERO -->
     <div class="pt-36 pb-24">
-        <div class="container grid grid-cols-2">
+        <div class="container grid grid-cols-2 gap-x-10">
             <div>
-                <h1 class="text-7xl font-bold mb-8 text-sky-600">Hilangkan Pening Urusan Keuangan Sekolah</h1>
+                <h1 class="text-6xl font-bold mb-8 text-sky-600">Hilangkan Pening Urusan Keuangan Sekolah</h1>
                 <p class="text-lg mb-9">Dengan system ini urusan keuangan sekolah anda akan jadi lebih mudah. Pembayaran bisa melalui dompet digital dan mercan swalayan yang tercatat otomatis, terdapat pula notifikasi tagihan pembayaran ke wali secara otomatis, dan banyak lagi fitur yang memudahkan pengguna.</p>
-                <a class="button font-semibold text-lg !px-9 !py-3" href="">MINTA DEMO</a>
+                <a class="button text-lg !px-9 !py-3" href="">Request Demo</a>
             </div>
+            <div><img src="assets/images/work.png" alt=""></div>
         </div>
     </div>
     <!-- Page -->
     <div class="py-28 bg-cyan-500 text-white">
-        <div class="container grid grid-cols-2">
-            <div></div>
+        <div class="container grid grid-cols-2 gap-x-10">
+            <div><img src="assets/images/work.png" alt=""></div>
             <div>
                 <h1 class="text-5xl font-bold mb-8 leading-tight">Masih Mengalami kerepotan/keruwetan ini?</h1>
                 <div class="text-lg">
@@ -53,7 +58,7 @@
     </div>
     <!-- Page -->
     <div class="py-28">
-        <div class="container grid grid-cols-2">
+        <div class="container grid grid-cols-2 gap-x-10">
             <div>
                 <h1 class="text-5xl font-bold mb-8 leading-tight">Masih ingin mengalami keruwetan...atau...</h1>
                 <div class="text-xl">
@@ -64,29 +69,83 @@
                     <div class="flex items-center gap-x-3 mb-4 leading-tight"><i class="bi-check-circle-fill pt-px text-green-400"></i>Ingin data keuangan lebih aman karena hanya bisa diakses oleh orang-orang yang memiliki berhak</div>
                 </div>
             </div>
-            <div></div>
+            <div><img src="assets/images/work.png" alt=""></div>
         </div>
     </div>
     <!-- Page -->
     <div class="py-28">
-        <div class="container !max-w-3xl text-center">
+        <div class="container flex flex-col items-center !max-w-3xl text-center">
             <h1 class="text-5xl font-bold mb-8 leading-tight">Sudahi..kerepotan dan keruwetan pengelolaan keuangan sekolah!</h1>
-            <p class="text-xl">Gunakan sistem keuangan yang kami buat untuk membantu anda mempermudah pengelolaan keuangan ekolah dan mengelola pembayaran, dengan fitur-fitur yang bisa membuat Anda nyaman, tenang yang kami sediakan kepada anda dengan Harga yang sangat-sangat terjangkau!</p>
+            <p class="text-xl mb-10">Gunakan sistem keuangan yang kami buat untuk membantu anda mempermudah pengelolaan keuangan ekolah dan mengelola pembayaran, dengan fitur-fitur yang bisa membuat Anda nyaman, tenang yang kami sediakan kepada anda dengan Harga yang sangat-sangat terjangkau!</p>
+            <div class="max-w-lg"><img src="assets/images/work.png" alt=""></div>
         </div>
     </div>
     <!-- Page : Features -->
-    <div class="py-52 text-white bg-slate-800">
+    <div class="py-36 text-white bg-slate-800">
         <div class="container">
-            <h1 class="text-4xl font-bold mb-8 leading-tight text-cyan-500">Fitur-fitur Emadra ShoolFin v.01</h1>
-            <p class="text-xl mb-20">Sistem ini memiliki fitur-fitur untuk membantu mempermudah nda dalam mengelola keuangan sekolah, mengelola pembayaran iuran sekolah dari berbagai cara seperti tunai, dompet digital, merchant, dan lain-lain. Sistem ini juga dapat membantu mencatat uang masuk non-pembayaran siswa, uang keluar, merencanakan pengeluaran,membandingkan Encana pengeluaran dan realisasi, menghasilkan laporan secara spontan begitu data input dimasukkan, serta berbagai fitur lainnya.</p>
+            <h1 class="text-5xl font-bold mb-8 leading-tight text-cyan-500">Fitur-fitur Emadra ShoolFin v.01</h1>
+            <p class="text-xl mb-28">Sistem ini memiliki fitur-fitur untuk membantu mempermudah nda dalam mengelola keuangan sekolah, mengelola pembayaran iuran sekolah dari berbagai cara seperti tunai, dompet digital, merchant, dan lain-lain. Sistem ini juga dapat membantu mencatat uang masuk non-pembayaran siswa, uang keluar, merencanakan pengeluaran,membandingkan Encana pengeluaran dan realisasi, menghasilkan laporan secara spontan begitu data input dimasukkan, serta berbagai fitur lainnya.</p>
             <div class="grid grid-cols-3 gap-9">
-                <template x-for="i in 9">
-                    <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
-                        <i class="bi bi-apple text-6xl block mb-5"></i>
-                        <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Import/Export Data</h3>
-                        <p>Data .xlsx dapat diimport kedalam sistem, atau data dari sistem dapat diexport ke dalam format .xlsx</p>
-                    </div>
-                </template>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-file-earmark-arrow-down-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Import/Export Data</h3>
+                    <p class="text-lg">Data .xlsx dapat diimport kedalam sistem, atau data dari sistem dapat diexport ke dalam format .xlsx</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-credit-card-2-back-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Multi Channel Payment</h3>
+                    <p class="text-lg">Menerima pembayaran iuran sekolah melalui berbagai channel pembayaran seperti tunai, dompet digital, atau swalayan tertentu.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-file-earmark-bar-graph-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Laporan Spontan</h3>
+                    <p class="text-lg">Begitu data input dimasukkan, laporan secara otomatis sudah jadi dan akan terupdate setiap ada inputan atau perubahan data.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-graph-up text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Grafik</h3>
+                    <p class="text-lg">Disediakan grafik untuk mempermudah analisa data.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-printer-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Cetak-cetak</h3>
+                    <p class="text-lg">Sistem mendukung cetak bukti pembayaran, kartu kontrol, laporan, dan berbagai dokumen lainnya.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-tags-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Kategorisasi</h3>
+                    <p class="text-lg">Sistem mendukung berbagai kategori pembayaran iuran sekolah bulanan, semesteran, tahunan, atau yang sifatnya insidental (hanya sekali)</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-android text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Android/Ios</h3>
+                    <p class="text-lg">Direncanakan hadir juga dalam bentuk aplikasi mobile, sehingga lebih memudahkan lagi dalam pengelolaan keuangan sekolah.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-bell-fill text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Notifikasi</h3>
+                    <p class="text-lg">Terdapat notifikasi ke email atau hanya ditampilkan di sistem ketika login.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-person-fill-lock text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Pembatasan Hak Akses</h3>
+                    <p class="text-lg">Hanya yang berhak yang dapat mengakses sistem.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-clock-history text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Log Akses & Aktivitas</h3>
+                    <p class="text-lg">Sistem merekam akses dan aktivitas pengguna, sehingga dapat ditelusuri jika ada kesalahan.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-window text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">UI/UX Intuitif</h3>
+                    <p class="text-lg">Tampilan, tata letak serta cara penggunaan yang intuitif melalui fitur akses cepat dan sebagainya.</p>
+                </div>
+                <div class="p-8 bg-slate-700 rounded-3xl flex flex-col">
+                    <i class="bi bi-stars text-6xl block mb-5"></i>
+                    <h3 class="text-2xl font-semibold uppercase mb-3 text-cyan-500">Fitur-fitur Lain</h3>
+                    <p class="text-lg">Dan berbagai fitur lainnya yang akan panjang jika disebutkan satu per satu pada website ini.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -134,11 +193,10 @@
                 <h2 class="text-3xl font-bold text-cyan-500 mb-8">Bayar 1x lifetime (Sistem Offline)</h2>
                 <p class="text-lg">Bayar 1 kali seumur hidup. Sistem diinstal di lokasi/server milik sekolah.</p>
                 <div class="flex flex-col mb-5 text-gray-600">
-                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pembayaran multi-channel (tunai, dompet digital, merchant swalayan)</div> -->
-                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Data dapat diexport atau diimport dalam format .xlsx</div> -->
-                    <!-- <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pengingat tagihan ke email siswa/wali</div> -->
-                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung aplikasi Android untuk pengelolaan keungan sekolah sehingga lebih memudahkan ekolah dan siswa/wali untuk melihat data pembayaran melalui aplikasi</div>
-                    <div class="flex gap-x-3 py-3"><i class="bi-check-lg text-2xl text-green-500"></i>Sudah termasuk domain & hosting</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Mendukung pembayaran multi-channel (tunai, dompet digital, merchant swalayan) namun harus dengtan setting perlengkapan tambahan</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Default aplikasi hanya bisa dibuka pada komputer yang diinstall</div>
+                    <div class="flex gap-x-3 py-3 border-b"><i class="bi-check-lg text-2xl text-green-500"></i>Bisa diinstall dan dimaintenance dari jarak jauh (bisa antar pulau) melalui remote (internet harus bagus dan stabil)</div>
+                    <div class="flex gap-x-3 py-3"><i class="bi-check-lg text-2xl text-green-500"></i>Sistem menyiapkan sendiri perangkat, dengan panduan kami</div>
                 </div>
                 <h2 class="text-cyan-800 mt-auto text-4xl text-[40px] font-bold mr-1">IDR 1.999.000</h2>
                 <h2 class="text-lg font-semibold text-gray-400 line-through  mb-6">IDR 4.499.000</h2>
@@ -147,13 +205,63 @@
             </div>
         </div>
     </div>
+    <!-- Page : Testimoni -->
+    <div class="py-36 bg-neutral-50">
+        <div class="container">
+            <h1 class="font-bold text-center text-4xl max-w-xl mx-auto mb-20">Simak apa kata mereka tentang <span class="text-cyan-500">Emadra SchoolFin</span></h1>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Testimoni #1 -->
+                <div class="flex flex-col py-10 px-8 bg-neutral-200/70 rounded-lg">
+                    <img src="assets/images/quote.svg" class="w-10 mb-4" alt="">
+                    <p class="mb-8">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptas explicabo quaerat vitae ullam laboriosam animi recusandae error dolorum praesentium, rerum repudiandae numquam delectus nostrum enim iusto, totam distinctio eveniet!"</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="aspect-square overflow-hidden rounded-full w-16">
+                            <img src="https://www.kevinashleyphotography.com/wp-content/uploads/2015/11/person.jpg" class="w-full h-full object-cover" alt="">
+                        </div>
+                        <div class="ml-4 leading-none">
+                            <div class="font-bold text-lg">John Doe</div>
+                            <span class="text-neutral-600">Google Programmer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimoni #2 -->
+                <div class="flex flex-col py-10 px-8 bg-neutral-200/70 rounded-lg">
+                    <img src="assets/images/quote.svg" class="w-10 mb-4" alt="">
+                    <p class="mb-8">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptas explicabo quaerat vitae ullam laboriosam animi recusandae error dolorum praesentium, rerum repudiandae numquam delectus nostrum enim iusto, totam distinctio eveniet!"</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="aspect-square overflow-hidden rounded-full w-16">
+                            <img src="https://roudlotulquran.sch.id/wp-content/uploads/2020/07/WhatsApp-Image-2020-07-22-at-14.06.18.jpeg" class="w-full h-full object-cover" alt="">
+                        </div>
+                        <div class="ml-4 leading-none">
+                            <div class="font-bold text-lg">John Doe</div>
+                            <span class="text-neutral-600">Google Programmer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimoni #3 -->
+                <div class="flex flex-col py-10 px-8 bg-neutral-200/70 rounded-lg">
+                    <img src="assets/images/quote.svg" class="w-10 mb-4" alt="">
+                    <p class="mb-8">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptas explicabo quaerat vitae ullam laboriosam animi recusandae error dolorum praesentium, rerum repudiandae numquam delectus nostrum enim iusto, totam distinctio eveniet!"</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="aspect-square overflow-hidden rounded-full w-16">
+                            <img src="https://www.kevinashleyphotography.com/wp-content/uploads/2015/11/person.jpg" class="w-full h-full object-cover" alt="">
+                        </div>
+                        <div class="ml-4 leading-none">
+                            <div class="font-bold text-lg">John Doe</div>
+                            <span class="text-neutral-600">Google Programmer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Page : Buy Now -->
-    <div class="py-48 text-white bg-gray-800">
+    <div class="py-32 text-white bg-gray-800">
         <div class="container flex flex-col items-center text-center">
             <h1 class="text-5xl font-bold mb-8 leading-tight">Beli Sekarang!</h1>
             <p class="text-xl max-w-2xl mb-14">Harga dapat berubah sewaktu-waktu tanpa pemberitahuan. Beli sekarang! Tekan tombol dibawah ini dan anda akan diberikan instruksi pembayaran melalui WhatsApp chat.</p>
             <!-- Timer Countdown -->
-            <div class="flex gap-x-6 mb-14" x-init="startCountdown('2024-07-30 23:59:59')">
+            <div class="flex gap-x-6 mb-14" x-init="startCountdown()">
                 <div class="flex flex-col items-center justify-center bg-orange-400 w-36 h-36 rounded-xl select-none">
                     <h3 class="text-6xl font-bold text-white" x-text="timer.day"></h3><span>Hari</span>
                 </div>
@@ -209,8 +317,12 @@
         </div>
     </div>
     <!-- Footer -->
-     <footer class="py-36 bg-gray-800">
-        <div class="container"></div>
+     <footer class="py-16 bg-stone-800 text-white text-lg">
+        <div class="container text-center">
+            Aplikasi disediakan oleh<br>
+            Emadra Edutechh Nusantara (<a href="">edutech.id</a>)<br>
+            Copyright@2024
+        </div>
      </footer>
 </body>
 

@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body{
+    font-family: 'Rubik', sans-serif;
+    @apply text-neutral-700;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container{
     @apply max-w-7xl px-10 mx-auto;
 }
 
 .button{
+    font-family: 'Poppins', sans-serif;
     @apply inline-flex items-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-gray-900 text-white;
 }
 

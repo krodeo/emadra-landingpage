@@ -1,8 +1,36 @@
 let App = {
+    /**
+     * --------------------------------------------------
+     * Landingpage configs
+     * --------------------------------------------------
+     */
+    countdownDeadline: '2024-07-30 23:59:59',
+    isNavbarSticky: true,
+    whatsappLink:'',
+    /**
+     * --------------------------------------------------
+     * App Variables
+     * --------------------------------------------------
+     */
+    isScrolled: false,
     timer: { day: 0, hour: 0, minute: 0, second: 0 },
-
-    startCountdown(date) {
-        let deadline = new Date(date).getTime();
+    /**
+     * --------------------------------------------------
+     * Init
+     * --------------------------------------------------
+     */
+    init() {
+        window.addEventListener('scroll', (e) => {
+            this.isScrolled = window.scrollY > 10;
+        });
+    },
+    /**
+     * --------------------------------------------------
+     * Countdown functions
+     * --------------------------------------------------
+     */
+    startCountdown() {
+        let deadline = new Date(this.countdownDeadline).getTime();
         let x = setInterval(() => {
             let now = new Date().getTime();
             let distance = deadline - now;
