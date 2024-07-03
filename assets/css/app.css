@@ -12,12 +12,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
-    @apply max-w-7xl px-10 mx-auto;
+    @apply max-w-7xl px-3 md:px-8 2xl:px-10 mx-auto;
 }
 
 .button{
     font-family: 'Poppins', sans-serif;
-    @apply inline-flex items-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-orange-500 text-white transition-colors;
+    @apply inline-flex items-center justify-center py-2.5 px-6 rounded-full bg-slate-800 hover:bg-orange-500 text-white transition-colors;
 }
 
 .card-feature{

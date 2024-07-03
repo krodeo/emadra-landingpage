@@ -6,7 +6,7 @@ let App = {
      */
     countdownDeadline: '2024-07-10 00:00:00', // Format YYYY-MM-DD HH:MM:SS
     isNavbarSticky: true,
-    whatsappLink: '',
+    whatsappLink: 'https://google.com/',
     /**
      * --------------------------------------------------
      * App Variables
